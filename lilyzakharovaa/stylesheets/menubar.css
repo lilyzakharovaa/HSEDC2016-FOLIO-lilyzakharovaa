@@ -1,19 +1,35 @@
 .menubar {
-  width: 100%;
-}
-
-.menubar div {
   display: flex;
   justify-content: center;
-  height: 60px;
-  padding: 20px;
+  align-items: center;
+  height: 50px;
+  padding: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
 }
 
 .logo {
   display: block;
-  width: 200px;
-  height: 25px;
+  margin: 0 auto;
+  width: 84px;
+  height: 24px;
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
-  background-position: top center;
+}
+
+@media screen and (max-width: 1180px) {
+
+  .menubar {
+    height: 44px;
+    padding: 2px;
   }
+
+  .logo {
+    width: 57px;
+    height: 17px;
+  }
+
+}
