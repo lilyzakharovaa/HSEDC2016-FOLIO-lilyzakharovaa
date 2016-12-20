@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.landing {
+  font-family:'PT Sans', sans-serif;
+  min-width: 768px;
+  background-color: #FAFAFA;
+}
+
 body.landing.bg {
   background-image: url(../images/mockups/1440.png);
   background-repeat: no-repeat;
@@ -5,12 +17,21 @@ body.landing.bg {
 }
 
 body.landing * {
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
+body.landing .menubar {
+  min-width: 768px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 body.landing .menubar div {
-  max-width: 1680px;
+  max-width: 1440px;
   margin: 0 auto;
+  background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
 }
 
@@ -77,11 +98,11 @@ body.landing .menubar div {
   right: 160px;
 }
 
-.line {
-  height: 4px;
-  width: 30px;
-  background-color: #5fe5c2;
+.mainSection section figure {
   margin-top: 58px;
+  width: 31px;
+  height: 4px;
+  background-color: rgb(80, 277, 194);
 }
 
 .mainSection.center section nav {
@@ -306,4 +327,12 @@ body.landing .menubar div {
     background-position: top center;
     background-repeat: no-repeat;
   }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #mockup1 { background-image: url(../images/about@2x.png); }
+  #mockup2 { background-image: url(../images/about@2x.png); }
+  #mockup3 { background-image: url(../images/works@2x.png); }
+  #mockup4 { background-image: url(../images/work@2x.png); }
+  #mockup5 { background-image: url(../images/screens@2x.png); }
 }

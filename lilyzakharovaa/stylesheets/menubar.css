@@ -1,35 +1,34 @@
 .menubar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  padding: 5px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
-  position: fixed;
   width: 100%;
-  background-color: white;
-  z-index: 1;
+}
+
+.menubar div{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .logo {
   display: block;
-  margin: 0 auto;
-  width: 84px;
+  width: 83px;
   height: 24px;
   background-image: url(../images/logo.svg);
-  background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1180px) {
-
-  .menubar {
-    height: 44px;
-    padding: 2px;
+@media screen and (max-width: 1179px) {
+  .menubar div {
+    padding: 13px;
   }
 
   .logo {
-    width: 57px;
-    height: 17px;
+    width: 61px;
+    height: 18px;
   }
-
 }
