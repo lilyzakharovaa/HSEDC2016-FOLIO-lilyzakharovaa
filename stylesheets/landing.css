@@ -4,6 +4,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.compact {
+  display: none;
+}
+
+.full {
+  display: block;
+}
+
 body.landing {
   font-family:'PT Sans', sans-serif;
   min-width: 768px;
@@ -179,6 +187,14 @@ body.landing .menubar div {
 }
 
 @media screen and (max-width: 1180px) {
+  .compact {
+    display: block;
+  }
+
+  .full {
+    display: none;
+  }
+
   .mainSection h2 {
     font-size: 30px;
     line-height: 39px;
@@ -264,6 +280,14 @@ body.landing .menubar div {
 }
 
 @media screen and (max-width: 840px) {
+  .compact {
+    display: block;
+  }
+
+  .full {
+    display: none;
+  }
+  
   .mainSection {
     width: 840px;
     height: 1024px;
